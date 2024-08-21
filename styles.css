@@ -1,0 +1,323 @@
+/* General Styles */
+* {
+    background-color: #F3F5FC;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #F3F5FC;
+    color: #274274;
+    height: 100%;
+    font-size: 16px; /* Base font size */
+}
+
+/* Header */
+.header {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: calc(50% + 10rem); /* Adjust width to balance scaling */
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0A3871;
+}
+
+.logo-letter {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+}
+
+.language-switcher {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: auto; /* Allow height to adjust based on content */
+    gap: 4rem;
+}
+
+/* Input Section */
+.input-section {
+    width: 50%; /* Set width to a fixed relative value */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.text-input {
+    font-family: 'Inter';
+    font-size: 1.5rem; /* Reduce font size slightly */
+    margin-top: 3rem;
+    margin-left: 5rem;
+    text-transform: lowercase;
+    width: 40rem;
+    max-width: 100%;
+    height: 15rem;
+    border: none;
+    color: #0A3871; 
+}
+::placeholder {
+    color: #0A3871;
+}
+.text-input:focus {
+    outline: none;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 1rem;
+    margin-left: 5rem;
+    margin-top: 32.5rem;
+    margin-bottom: 0;
+}
+
+.info-icon {
+    width: 1rem;
+    height: 1rem;
+    background-color: #65747D;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1rem;
+    font-weight: bold;   
+}
+
+.info {
+    font-family: 'Inter';
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+.buttons {
+    margin-top: 1rem;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.9rem;
+    
+}
+
+.btn-encrypt, .btn-decrypt {
+    border-radius: 1rem;
+    height: 4rem;
+    width: 18rem;
+    cursor: pointer;
+}
+
+.btn-encrypt {
+    background-color: #0A3871;
+    border: 0.0625rem solid #0A3871;
+    color: white;
+}
+
+.btn-encrypt:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.btn-decrypt {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.btn-decrypt:hover {
+    background-color: #274274;
+    color: white;
+}
+
+/* Output Section */
+.output-section {
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    width: 24rem;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.5));
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    min-height: 58rem; /* Establecer una altura mínima suficiente */
+}
+
+.text-output {
+    background: white;
+    border: none;
+    color: #0A3871;
+    width: 20rem;
+    max-width: 100%;
+    height: 39rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: none;
+}
+.text-output:focus {
+    outline: none;
+}
+
+.output-image img {
+    width: 20rem;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.output-texts {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.output-subtext {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+    color: black;
+}
+
+.output-paragraph {
+    font-family: 'Inter';
+    font-size: 0.875rem;
+    color: #495057;
+    margin: 0;
+}
+
+.btn-copy {
+    border-radius: 1rem;
+    color: #0A3871;
+    cursor: pointer;
+    height: 4rem;
+    width: 20rem;
+    max-width: 100%;
+    font-size: 1.5rem;
+    font-family: 'Inter';
+    margin: 1.5rem auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+.btn-copy:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+/* ***********DIFERENTES PANTALLAS********** */
+
+/* Media Query for Tablet with W: 768px and H: 1174px */
+@media (max-width: 768px) {
+    /* General Styles */
+    .header {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .input-section {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .text-input {
+        width: 90%;
+        margin: 0 auto;
+        height: 10rem;
+    }
+
+    .information {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .buttons {
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-encrypt, .btn-decrypt {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .output-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .output-image {
+        display: none; /* Hide image in tablet view */
+    }
+
+    .output-texts {
+        display: block; /* Always display the texts */
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    /* Display only after encryption or decryption */
+    .text-output, .btn-copy {
+        display: block;
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
+
+/* Show the output section only after encryption or decryption */
+.output-section.encrypted .output-image, 
+.output-section.encrypted .output-texts {
+    display: none; /* Hide the image and texts */
+}
+
+.output-section.encrypted .text-output, 
+.output-section.encrypted .btn-copy {
+    display: block; /* Show the output text area and copy button */
+}

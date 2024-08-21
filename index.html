@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT ENCRYPTOR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <span class="logo-letter">a</span>
+        </div>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="input-section">
+            <textarea class="text-input" rows="10" cols="30" id="input-title" placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="information">
+                <div class="info-icon">!</div>
+                <p class="info" id="info-label">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button class="buttons btn-encrypt" onclick="btnEncryption()" id="encrypt-button">Encriptar</button>
+                <button class="buttons btn-decrypt" onclick="btnDecrypt()" id="decrypt-button">Desencriptar</button>
+            </div>
+        </section>
+        <section class="output-section">
+            <textarea class="text-output" id="output-text" rows="10" cols="30"></textarea>
+            <img src="Muñeco.png" alt="Muñeco" class="output-image">
+            <div class="output-texts">
+                <p class="output-subtext" id="output-subtext"><strong>Ningún mensaje fue encontrado</strong></p>
+                <p class="output-paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button class="btn-copy" onclick="btnCopy() " id="copy-button">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
