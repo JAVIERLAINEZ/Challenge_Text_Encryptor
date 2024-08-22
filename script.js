@@ -97,7 +97,7 @@ function btnEncryption() {
 
     // Cambia el padding-top y padding-bottom de 243px a 32px, solo si encrypted class no esta presente:
     if (!document.querySelector(".output-section").classList.contains("encrypted")) {
-        document.querySelector(".text-output").style.paddingtopTop = "32px";
+        document.querySelector(".text-output").style.paddingtopTop = "3px";
         document.querySelector(".text-output").style.paddingBottom = "32px";
     }
 }
@@ -144,7 +144,7 @@ function btnDecrypt() {
 
     // Cambia el padding-top y padding-bottom de 243px a 32px, solo si encrypted class no esta presente:
     if (!document.querySelector(".output-section").classList.contains("encrypted")) {
-        document.querySelector(".text-output").style.paddingtopTop = "32px";
+        document.querySelector(".text-output").style.paddingtopTop = "3px";
         document.querySelector(".text-output").style.paddingBottom = "32px";
     }
 }
